@@ -32,7 +32,11 @@ if (!$users) {
     </tr>
 
 
+    git pull origin main --allow-unrelated-histories # Pull the latest changes from the remote branch
+    git pull origin main --rebase
 
+    # Push your changes after resolving any conflicts (if any)
+    git push origin main
     <?php foreach ($users as $user) { ?>
     <tr>
 
